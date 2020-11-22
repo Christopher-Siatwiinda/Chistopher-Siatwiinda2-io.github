@@ -1,0 +1,16 @@
+body{
+  background: #29254d;
+  font-family: Lucida Calligraphy;
+  text-align: center;
+  padding: inherit;
+}
+#form1{
+  width: 30%;
+  margin:0 auto;
+}
+#btn{
+  background-color: Red;
+}
+#log{
+  color: Red;
+}

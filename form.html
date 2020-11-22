@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  form page
+{% endblock %}
+
+{% block body %}
+<div id="form1">
+  <form class="form-group" action="index.html" method="post">
+      <div class="form-group">
+          <label for="InputFirstName">First name</label>
+          <input type="text" class="form-control" id="InputFirstName" placeholder="Enter your first name" name="first_name">
+      </div>
+          <div class="form-group">
+          <label for="InputLastName">Last name</label>
+          <input type="text" class="form-control" id="InputLastName" placeholder="Enter your last name" name="last_name">
+      </div>
+      <div class="form-group">
+          <label for="InputCourse" >Course</label>
+          <input type="text" class="form-control" aria-describedby="courseName" placeholder="course name" name="course">
+          <small id="courseName" class="form-text text-muted">course name in full</small>
+      </div>
+      <div class="form-group">
+          <label for="InputSemester">Semester</label>
+          <input type="number" class="form-control" id="InputSemester" placeholder="eg 1" name="semester">
+      </div>
+      <div class="form-group">
+          <label for="Provinces">Select province</label>
+          <input class="form-control" id="Provinces" placeholder= "province" list = "provinces" name="provice">
+          <datalist id="provinces">
+            <option value="Southern">
+            <option value="Muchinga">
+            <option value="Lusaka">
+            <option value="Western">
+            <option value="Luapula">
+            <option value="Central">
+            <option value="Copperbelt">
+            <option value="North Western">
+            <option value="Nothern">
+            <option value="Eastern">
+          </datalist>
+      </div>
+      <div>
+          <button id="btn" type="submit" class="btn btn-outline-primary btn-lg bit-block">Register</button>
+          <h6 id="qus">Already have account?</h6>>
+          <link rel="stylesheet" href="form1.html" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" id="log">login</link>
+      </div>
+  </form>
+  </div>
+{% endblock %}
